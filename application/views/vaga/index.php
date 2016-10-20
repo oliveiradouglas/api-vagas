@@ -23,13 +23,6 @@
                         Catho - backend test
                     </a>
                 </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Documentação da API</a></li>
-                        <li><a href="#">Documentação das classes</a></li>
-                    </ul>
-                </div>
             </div>
         </nav>
 

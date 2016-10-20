@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Catho backend test">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>  
+    <filter>
+        <whitelist>
+            <directory>./system/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

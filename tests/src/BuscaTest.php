@@ -6,10 +6,7 @@ class BuscaTest extends PHPUnit_Framework_TestCase {
 	private $busca;
 
 	protected function setUp() {
-		$vagasJson          = file_get_contents('./vagas.json');
-		$registrosParaBusca = json_decode($vagasJson, true)['docs'];
-
-		$this->busca = new Busca($registrosParaBusca);
+		$this->busca = new Busca(App\CarregadorConteudoArquivo::carregarJson('./vagas.json')['docs']);
 
 		parent::setUp();
 	}

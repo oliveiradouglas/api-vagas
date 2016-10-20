@@ -6,9 +6,7 @@ class OrdenacaoTest extends PHPUnit_Framework_TestCase {
 	private $ordenacao;
 
 	protected function setUp() {
-		$vagasJson          = file_get_contents('./vagas.json');
-		$registrosParaBusca = json_decode($vagasJson, true)['docs'];
-		$busca = new App\Busca($registrosParaBusca);
+		$busca = new App\Busca(App\CarregadorConteudoArquivo::carregarJson('./vagas.json')['docs']);
 
 		$this->ordenacao = new Ordenacao(
 			$busca->filtrar(['title' => 'Técnico em Enfermagem']),
