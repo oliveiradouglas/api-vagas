@@ -9,12 +9,12 @@
    * No windows fica em C:\Windows\System32\drivers\etc\hosts
 
  - Acrescentar no arquivo de configuração do apache o seguinte trecho:
- 	<pre>
+	```bash
 	 	<VirtualHost catho.local:80>
 	        ServerName catho.local
 	        DocumentRoot CAMINHO DO PROJETO
 		</VirtualHost>
-	</pre>
+	```
 
 	* No linux fica em /etc/apache2/sites-available/000-default.conf
 	* No windows fica em C:\xampp\apache\conf\extra\httpd-default.conf
