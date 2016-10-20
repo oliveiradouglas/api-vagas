@@ -14,8 +14,8 @@ Os atributos disponíveis para filtro são:
 - description // faz a busca pela description da vaga
 - cidade // faz a busca pela cidade da vaga
 
-Para ordenação os seguintes parametros são aceitos:
-- coluna_ordenacao // informar a coluna que será utilizada na ordenação da busca, as opções disponiveis são: title, description e salario (default)
+Para ordenação os seguintes parâmetros são aceitos:
+- coluna_ordenacao // informar a coluna que será utilizada na ordenação da busca, as opções disponíveis são: title, description e salario (default)
 - direcao_ordenacao // informar qual a direção que os registros devem ser ordenados, as opções disponíveis são: asc ou desc
 
 Exemplos: 
@@ -52,7 +52,7 @@ vendor/bin/phpunit
 
 # Decisões de implementação
 
-- Deixei as classes o mais genéricas possível porque da maneira que as aplicações crescem, não poderia restringir a utlização delas apenas para a API de vagas, dessa forma facilita a manutenção e caso surja algum outro recurso para ser incluido na API será fácil implementar.
+- Deixei as classes o mais genéricas possível porque da maneira que as aplicações crescem, não poderia restringir a utilização delas apenas para a API de vagas, dessa forma facilita a manutenção e caso surja algum outro recurso para ser incluído na API será fácil implementar.
 
 - Utilização do framework CodeIgniter: Por ser leve e facilitar o trabalho com rotas principalmente nesse estágio. Decidi utiliza-lo, por mais que a aplicação seja "simples" penso que caso ela venha a crescer com o tempo, por exemplo se existir uma segunda etapa deste teste, um framework ajudaria muito na organização e na velocidade de desenvolvimento da aplicação.
 
@@ -60,4 +60,4 @@ vendor/bin/phpunit
 
 - Comentários no código: Acredito que alguns deles ficaram redundantes porque tento sempre ja deixar claro qual o papel da função na sua assinatura, não havendo a necessidade de comentários, mas coloquei mesmo assim porque foi pedido na descrição do teste.
 
-- Uma tela para consumir a API: Para facilitar os testes desenvolvi uma tela que falita a chamada dos métodos da API.
+- Uma tela para consumir a API: Para facilitar os testes desenvolvi uma tela que facilita a chamada dos métodos da API.
