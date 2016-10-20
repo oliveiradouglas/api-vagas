@@ -10,10 +10,10 @@
 
  - Acrescentar no arquivo de configuração do apache o seguinte trecho:
  	<pre>
-	 	<VirtualHost catho.local:80>
+	 	"<VirtualHost catho.local:80>
 	        ServerName catho.local
 	        DocumentRoot <strong>Caminho do projeto</strong>
-		</VirtualHost>
+		</VirtualHost>"
 	</pre>
 
 	* No linux fica em /etc/apache2/sites-available/000-default.conf
