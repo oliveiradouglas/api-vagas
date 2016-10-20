@@ -42,7 +42,7 @@ http://catho.local/api/v1/vagas?title=analista&direcao_ordenacao=asc&coluna_orde
 
 Os testes foram implementados com o framework PHPUnit, para executa-los basta rodar o comando através do terminal no diretório do projeto:
 
-vendor/bin/phpunit --colors test
+vendor/bin/phpunit --colors tests
 
 # Estrutura
 
