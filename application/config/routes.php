@@ -51,5 +51,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['404_override']         = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['default_controller']   = 'VagaController/buscarVagas';
-$route['api/v1/vagas']['GET']  = $route['default_controller'];
+$route['default_controller']   = 'VagaController';
+$route['api/v1/vagas']['GET']  = 'VagaController/buscarVagas';

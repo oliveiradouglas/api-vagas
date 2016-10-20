@@ -3,6 +3,10 @@
 use App\Busca;
 
 class VagaController extends CI_Controller {
+	public function index() {
+		$this->load->view('vaga/index');
+	}
+
 	public function buscarVagas() {
 		$vagasJson          = file_get_contents('./vagas.json');
 		$registrosParaBusca = json_decode($vagasJson, true)['docs'];
