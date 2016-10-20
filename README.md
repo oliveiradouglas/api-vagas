@@ -3,6 +3,20 @@
 - Necessário php >= 5.6
 - Baixar o projeto e colocar no seu servidor local
 
+## Configure o dominio virtual
+ - Acrescentar no final do arquivo hosts o seguinte trecho: 127.0.0.1 catho.local
+   * No linux fica em /etc/hosts
+   * No windows fica em C:\Windows\System32\drivers\etc\hosts
+
+ - Acrescentar no arquivo de configuração do apache o seguinte trecho:
+ 	<VirtualHost catho.local:80>
+        ServerName catho.local
+        DocumentRoot <strong>Caminho do projeto</strong>
+	</VirtualHost>
+
+	* No linux fica em /etc/apache2/sites-available/000-default.conf
+	* No windows fica em C:\xampp\apache\conf\extra\httpd-default.conf
+
 # API
 
 Para facilitar o uso, foi implementada uma tela simples para simular o cliente da API, basta acessar a home do projeto ex: http://catho.local
