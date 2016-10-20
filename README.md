@@ -19,6 +19,8 @@
 	* No linux fica em /etc/apache2/sites-available/000-default.conf
 	* No windows fica em C:\xampp\apache\conf\extra\httpd-default.conf
 
+  - Reinicie o apache
+  
 # API
 
 Para facilitar o uso, foi implementada uma tela simples para simular o cliente da API, basta acessar a home do projeto ex: http://catho.local
