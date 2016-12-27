@@ -4,14 +4,14 @@
 - Baixar o projeto e colocar no seu servidor local
 
 ## Configure o dominio virtual
-- Acrescentar no final do arquivo hosts o seguinte trecho: <pre> 127.0.0.1 catho.local </pre>
+- Acrescentar no final do arquivo hosts o seguinte trecho: <pre> 127.0.0.1 api-vagas.local </pre>
    * No linux fica em /etc/hosts
    * No windows fica em C:\Windows\System32\drivers\etc\hosts
 
 - Acrescentar no arquivo de configuração do apache o seguinte trecho:
 	```bash
-	 	<VirtualHost catho.local:80>
-	        ServerName catho.local
+	 	<VirtualHost api-vagas.local:80>
+	        ServerName api-vagas.local
 	        DocumentRoot CAMINHO DO PROJETO
 		</VirtualHost>
 	```
@@ -23,9 +23,9 @@
 
 # API
 
-Para facilitar o uso, foi implementada uma tela simples para simular o cliente da API, basta acessar a home do projeto ex: http://catho.local
+Para facilitar o uso, foi implementada uma tela simples para simular o cliente da API, basta acessar a home do projeto ex: http://api-vagas.local
 
-Para fazer uma requisição na api de vagas basta chamar por exemplo: http://catho.local/api/v1/vagas
+Para fazer uma requisição na api de vagas basta chamar por exemplo: http://api-vagas.local/api/v1/vagas
 
 Os atributos disponíveis para filtro são:
 - title // faz a busca pelo title da vaga
@@ -39,22 +39,22 @@ Para ordenação os seguintes parâmetros são aceitos:
 Exemplos: 
 
 // Busca todas as vagas que possuem 'php' no title
-http://catho.local/api/v1/vagas?title=php
+http://api-vagas.local/api/v1/vagas?title=php
 
 // Busca todas as vagas que possuem 'superior completo' na description
-http://catho.local/api/v1/vagas?description=superior completo
+http://api-vagas.local/api/v1/vagas?description=superior completo
 
 // Busca todas as vagas da cidade de 'joinville'
-http://catho.local/api/v1/vagas?cidade=joinville
+http://api-vagas.local/api/v1/vagas?cidade=joinville
 
 //Busca todas as vagas que possuem 'enfermagem' no title e 'técnico' na description
-http://catho.local/api/v1/vagas?title=enfermagem&description=técnico
+http://api-vagas.local/api/v1/vagas?title=enfermagem&description=técnico
 
 //Busca todas as vagas que possuem 'recepcionista' no title e ordena por salário em ordem 'desc'
-http://catho.local/api/v1/vagas?title=recepcionista&direcao_ordenacao=desc
+http://api-vagas.local/api/v1/vagas?title=recepcionista&direcao_ordenacao=desc
 
 //Busca todas as vagas que possuem 'analista' no title e ordena por title em ordem 'asc'
-http://catho.local/api/v1/vagas?title=analista&direcao_ordenacao=asc&coluna_ordenacao=title
+http://api-vagas.local/api/v1/vagas?title=analista&direcao_ordenacao=asc&coluna_ordenacao=title
 
 # Testes
 
